@@ -1,20 +1,6 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(0, 25, 110);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +10,180 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f9fb;
+  padding: 10px;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navigation h2 {
+  margin: 0;
+  color: #ff850c;
+}
+
+.navigation a {
+  margin: 0 10px;
+  color: #121cdd;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.navigation button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff4d4d;
+  color: white;
+  cursor: pointer;
+}
+.title {
+  color: orange;
+  padding: 10px;
+}
+
+.navigation button:hover {
+  background-color: #ff1a1a;
+}
+
+.logout-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff4d4d;
+  color: white;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #ff1a1a;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.login input {
+  margin: 5px;
+  padding: 10px;
+  width: 200px;
+}
+
+.login button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #61dafb;
+  color: white;
+  cursor: pointer;
+}
+
+.login button:hover {
+  background-color: #21a1f1;
+}
+
+.event-form {
+  margin-bottom: 20px;
+}
+
+.event-form input,
+.event-form textarea {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+}
+
+.event-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #61dafb;
+  color: white;
+  cursor: pointer;
+}
+
+.event-form button:hover {
+  background-color: #21a1f1;
+}
+
+.event-list {
+  max-width: 600px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.event-item {
+  background: #444;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.event-item button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff4d4d;
+  color: white;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.event-item button:hover {
+  background-color: #ff1a1a;
+}
+
+.event-item button:nth-child(4) {
+  background-color: #61dafb;
+}
+
+.event-item button:nth-child(4):hover {
+  background-color: #21a1f1;
+}
+
+.event-item button:nth-child(5) {
+  background-color: #4caf50;
+}
+
+.event-item button:nth-child(5):hover {
+  background-color: #388e3c;
+}
+
+.event-item button:nth-child(5).rsvped {
+  background-color: #388e3c;
+  cursor: not-allowed;
+}
+
+.event-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.dashboard {
+  margin-top: 40px;
+  text-align: left;
+  max-width: 600px;
+  width: 100%;
 }
